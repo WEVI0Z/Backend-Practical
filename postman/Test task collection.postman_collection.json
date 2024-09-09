@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "bbd58459-06ba-44bf-8d09-454c048785eb",
+		"name": "Test task collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28988849"
+	},
+	"item": [
+		{
+			"name": "Create Employee API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"firstName\": \"Salman\",\n    \"lastName\": \"Ebrahim\",\n    \"dateOfBirth\": \"1990-01-01\",\n    \"salary\": \"2000\",\n    \"joinDate\": \"2016-03-18\",\n    \"departement\": \"Business\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By Id API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Employees API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees?name=Mohamed&toSalary=2000&fromSalary=1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mohamed"
+						},
+						{
+							"key": "toSalary",
+							"value": "2000"
+						},
+						{
+							"key": "fromSalary",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

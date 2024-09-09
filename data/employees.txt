@@ -1,0 +1,2 @@
+{"id":1,"firstName":"Mohamed","lastName":"Ahmed","dateOfBirth":"2000-01-01","salary":1000,"joinDate":"2023-05-18","departement":"IT"}
+{"id":3,"firstName":"Salman","lastName":"Ebrahim","dateOfBirth":"1990-01-01","salary":2000,"joinDate":"2016-03-18","departement":"Business"}
